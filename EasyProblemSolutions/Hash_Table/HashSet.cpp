@@ -22,7 +22,7 @@ public:
         
         LinkedList* curr = head;
         
-        while(curr and curr->next){
+        while(curr->next){
             if(curr->next->val==key){
                 return;
             }
