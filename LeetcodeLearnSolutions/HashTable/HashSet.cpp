@@ -1,4 +1,4 @@
-#Using Linked List as Buckets
+//Using Linked List as Buckets
 
 
 class MyHashSet {
@@ -6,8 +6,8 @@ public:
     struct LinkedList{
         int val;
         LinkedList *next;
-        LinkedList(): val(0), next(NULL){}
-        LinkedList(int x): val(x), next(NULL){}
+        LinkedList(): val(0), next(nullptr){}
+        LinkedList(int x): val(x), next(nullptr){}
         LinkedList(int x, LinkedList *next): val(x), next(next){}
     };
     
@@ -33,7 +33,7 @@ public:
     
     void remove(int key) {
         LinkedList* temp = head;
-        while(temp and temp->next){
+        while(temp && temp->next){
             if(temp->next->val==key){
                 temp->next=temp->next->next;
             }

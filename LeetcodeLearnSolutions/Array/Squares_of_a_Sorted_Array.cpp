@@ -1,3 +1,9 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
@@ -22,3 +28,21 @@ public:
         return arr_2;
     } 
 };
+
+
+
+int main() {
+
+    //declare a test array
+    vector<int> ans = { 2, 3, 4, 5, 6 };
+    // call the class
+    Solution sol;
+    // call the method
+    vector<int> result = sol.sortedSquares(ans);
+
+    for (int i : result) {
+        cout << i << "\n";
+    };
+
+}
+
